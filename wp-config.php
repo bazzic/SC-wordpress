@@ -19,10 +19,10 @@
 define('DB_NAME', 'c6wp');
 
 /** MySQL database username */
-define('DB_USER', 'c6wp');
+define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 's1l3xd1g1t4l');
+define('DB_PASSWORD', '');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
@@ -78,7 +78,7 @@ define('WPLANG', '');
  * It is strongly recommended that plugin and theme developers use WP_DEBUG
  * in their development environments.
  */
-define('WP_DEBUG', false);
+define('WP_DEBUG', true);
 
 /* That's all, stop editing! Happy blogging. */
 
