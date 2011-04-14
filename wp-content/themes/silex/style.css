@@ -1,0 +1,344 @@
+/*
+Theme Name: Silex
+Theme URI: http://www.silexresources.com/
+Description: Average theme, awesome header!
+Author: Silex Coders
+
+*/
+@CHARSET "UTF-8";
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+	font-size:16px;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	clear: both;
+}
+ol, ul {
+	list-style: bullet;
+}
+blockquote {
+	quotes: none;
+}
+blockquote:before, blockquote:after {
+	content: '';
+	content: none;
+}
+del {
+	text-decoration: line-through;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a img { border: none; }
+
+a {color: #2d96ed;}
+
+body {
+	background-color: #d5ebff;
+	font-family: helvetica, arial, sans-serif;
+}
+
+#wrapper {
+	width: 962px;
+	margin: auto;
+}
+
+#header {
+	height: 111px;
+}
+
+#site-title img {
+	padding-top: 19px;
+	float:left;
+}
+
+#masthead {
+	width:100%;
+	float:left;
+	position:relative;
+}	
+
+.menu {
+	float: right;
+	position:absolute;
+	right:0;
+	bottom:0;
+}
+
+.menu ul {
+	list-style-type: none;
+}
+
+.menu ul li {
+	background-color: #fff;
+	float: left;
+	margin:0 0 10px 7px;
+	padding:10px 22px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+
+.menu ul li:hover {
+	background-color:#ebf5ff;
+	cursor:pointer;
+}
+
+.menu ul a {
+	text-decoration:none;
+	color:#318ad9;
+}
+
+.menu li:hover a,
+.menu ul a:hover {
+	text-decoration:underline;
+}
+
+#splash {
+	background-color: #fff;
+	clear: both;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	position:relative;
+}
+
+#splash img {
+	margin: 12px;
+}
+
+#splash h1 {
+	color:white;
+	position:absolute;
+	top:12px;
+	right:12px;
+	width:344px;
+	height:100%;
+	padding:32px 0 0 32px;
+	background-image:url(image/sr_splash_overlay.png);
+	background-position:top right;
+	background-repeat:no-repeat;
+	font-size:1.6em;
+}
+
+#splash h1 span {
+	display:block;
+	margin:0 0 5px 0;
+}
+
+#main {
+	margin: 20px 0;
+	float:left;
+	width:100%;
+}
+
+#content {
+	float: left;
+	width: 550px;
+}
+
+#content h2 {
+	font-size:1.5em;
+	margin:0 0 12px;
+}
+
+#content h3 {
+	margin:0 0 8px;
+	border-bottom:1px solid white;
+	padding-bottom:6px;
+}
+
+#content p {
+	margin:1em 0;
+	line-height:1.25;
+}
+
+#content h2,
+#content h3,
+#content h4 {
+	color: #318ad9;
+}
+
+#content h2 a,
+#content h3 a,
+#content h4 a {
+	color: #318ad9;
+	text-decoration:none;
+}
+
+#content h2 a:hover,
+#content h3 a:hover,
+#content h4 a:hover {
+	text-decoration:underline;
+}
+
+#jobs .job h3 {
+	border:0;
+	border-top:1px solid white;
+	padding:8px 0 0 0;
+}
+
+#jobs .job p {
+	margin:0.5em 0;
+	font-size:0.8em;	
+}
+
+#jobs .job p.jobs-applynow a {
+	color:black;
+	text-decoration:none;
+	font-weight:bold;
+}
+
+#jobs .job p.jobs-applynow a:hover {
+	text-decoration:underline;
+}
+
+#jobs .job ul li {
+	line-height:1.4;
+	font-size:0.9em;
+}
+
+#jobs .job ul li span {
+}
+
+
+
+
+#sidebar {
+	float:right;
+	width: 390px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	background-color:white;
+}
+
+.sidebar_item,
+#sidebar .widget {
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	padding-left:17px;
+	padding-right:17px;
+	margin: 13px 10px;
+	background-color: #edb960;
+	padding:5px 17px 16px;
+}
+
+
+
+.sidebar_item h2,
+#sidebar .widget h2 {
+	padding-top: 12px;
+	padding-bottom: 4px;
+	color: #fff;
+	margin:0 0 10px 0;
+	border-bottom: 2px solid white;
+}
+
+.sidebar_item h2 a,
+#sidebar .widget h2 a {
+	text-decoration:none;	
+	color: #fff;
+}
+
+#sidebar .widget ul li {
+	padding-top: 10px;
+	line-height:1.4;
+}
+
+.news_item p {
+}
+
+#sidebar .news {
+}
+
+#sidebar .job {
+	background-color: #addd83;
+	padding:5px 17px 16px;
+}
+
+/* Text meant only for screen readers */
+.screen-reader-text {
+	position: absolute;
+	left: -9000px;
+}
+
+
+
+#footer {
+	margin: 20px 0;
+	clear: both;
+}
+#colophon {
+	border-top: 2px solid #000;
+	margin-top: -4px;
+	padding: 18px 0;
+	overflow: hidden;
+}
+
+#colophon a {
+	display:none;
+}
+
+#site-info {
+	font-weight: bold;
+}
+
+#content ul.job-desc ul {
+	list-style-type:disc;
+	padding-left:40px;
+	margin-top:5px;
+}
+
+#content ul.job-desc ul li {
+	margin:5px 0;
+}
+
+#content ul.job-desc>li {
+	margin:10px 0;
+}
+
+#content p.jobs-applynow a {
+	color:#318AD9;
+	text-decoration:none;
+}
+
+#content p.jobs-applynow:hover {
+	background-color:#ebf5ff;
+	cursor:pointer;
+}	
+
+#content p.jobs-applynow:hover a {
+	text-decoration:underline;
+}
+
+
+#content p.jobs-applynow  {
+	background-color: #fff;
+	display:inline-block;
+	padding:10px 22px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+

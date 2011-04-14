@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Silex Resources</title>
+	<link type="text/css" rel="stylesheet" href="css/main.css" media="screen,projection" />
+	<script src="js/cufon-yui.js" type="text/javascript"></script>
+	<script src="js/FoundryFormSans.js" type="text/javascript"></script>
+	<script src="js/syfy-regular.font.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	Cufon.replace('#nav ul li a', { fontFamily: 'FoundryFormSans', color: '#318ad9'	});
+	Cufon.replace('#content h2', { fontFamily: 'FoundryFormSans', color: '#318ad9' });
+	Cufon.replace('#content h3', { fontFamily: 'FoundryFormSans', color: '#318ad9' });
+	Cufon.replace('.news_item h3', { fontFamily: 'FoundryFormSans', color: '#ffffff' });
+	</script>
+</head>
+<body>
+	<div id="container" class="section">
+		<div id="header" class="header">
+			<img src="image/sr_logo.png" alt="Silex Resources Logo"/>
+			<div class="links">
+				<ul>
+					<li>..</li>
+					<li>..</li>
+					<li>..</li>
+					<li>..</li>
+					<li>..</li>
+				</ul>
+			</div>
+			<div id="nav" class="nav">
+				<ul>
+					<li><a href="contact">GET IN TOUCH</a></li>
+					<li><a href="jobs">JOBS</a></li>
+					<li><a href="about">ABOUT US</a></li>
+				</ul>
+			</div>
+			
+		</div>
+		<div id="splash">
+			<img src="image/sr_tree.png" alt="Open thinking, open recruitment. Welcome to Silex Resources" />
+		</div>
+		<div id="content" class="section">
+			<div id="content_left" class="section">
+				<h2>A resourcing partner that thinks the way you do</h2>
+				<p>The digital age needs a fresh approach to finding and hiring the right talent for your business. We are technology lead and have a unique insight into the industry, because like you, we understand software development.</p>   
+				<p>So if you are looking for a superstar to lead your next project, a safe pair of hands to provide short term capacity or fresh talent to grow your business, we have access to the best people to help achieve your goals.</p>
+				
+				<h2>A fresh approach to recruiting</h2>
+				<p>We’re different. Our management team comes from a rich background of software development, and we have brought the spirit of the open source community to recruitment. We build strong relationships with both our 
+				clients and candidates and treat them with honesty and integrity in the framework of an open relationship built on partnership and mutual trust.</p>
+				
+				<h2>A range of recruitment solutions</h2>
+				<p>We have extensive direct industry experience in the UK and we help companies like yours with a range of services from supplying a single candidate, to working with you to design, build and deploy an entire team to deliver a project.</p>
+				<p>Whether you are looking to recruit a single contractor, an entire team for a project, or you need to fill a permanent role, we will work with you to understand your requirements and how you work before we recommend the best 
+				candidates who will make the most significant contribution to your organisation.</p>
+
+				<h3>Contract recruitment</h3>
+				<p>Highly skilled and motivated professional contractors are a cost effective solution for resourcing both long and short term projects and replacing permanent staff temporarily. Choosing the right people can make the difference between 
+				success and failure and our experience in the industry will help you secure the right resources.</p>
+
+				<h3>Project team</h3>
+				<p>With our unique experience in recruitment and the software development profession, we can help you to design a project team for your specific requirements, build that team from our pool of the best talent available, 
+				and deploy that team into your organisation to deliver real benefit to you.</p>
+
+				<h3>Permanent recruitment</h3>
+				<p>Your staff are the lifeblood of your organisation, and choosing the right staff is one of the most critical decisions you will make. Our unique approach offers you solutions where our competitors will give you options.</p>
+			</div>
+			<div id="content_right" class="section">
+				<div class="sidebar_item news_item">
+					<h3>Latest News</h3>
+					<p>Silex acquires mortimer spinks in a reverse takeover</p>
+				</div>
+				<div class="sidebar_item job_item">
+					<h3>Latest Jobs</h3>
+					<p>Systes Architect for Video on Demand leader</p>
+					<p>Drupal developer for TV brand</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
