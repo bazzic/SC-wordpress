@@ -282,7 +282,7 @@ body {
 	padding-left:17px;
 	padding-right:17px;
 	margin: 13px 10px;
-	background-color: #76dd37;
+	background-color: #76cc37;
 	padding:5px 17px 16px;
 }
 
@@ -306,6 +306,10 @@ body {
 #sidebar .widget ul li {
 	padding-top: 10px;
 	line-height:1.4;
+}
+
+#sidebar .widget ul a {
+  color: #2d77dd;
 }
 
 .news_item p {
@@ -412,7 +416,7 @@ ol.commentlist * {
 }
 
 ol.commentlist {list-style:none; margin:0 0 15px 0px; padding:0; text-indent:0;}
-ol.commentlist li {background: #fff;list-style: none;font-weight: 500;border: none;margin-bottom: 10px;margin-top: 10px;margin-left: 15px;padding: 10px;padding-right: 0px;}
+ol.commentlist li {background: #fff;list-style: none;font-weight: 500;border: none;margin-bottom: 10px;margin-top: 10px;margin-left: 0px;padding: 10px;padding-right: 0px;}
 
 ol.commentlist li li {border-left: 1px dashed #ccc;}
 ol.commentlist li.alt {background: #fff;}
@@ -455,5 +459,6 @@ ol.commentlist li.comment {
 }
 ol.commentlist li.comment ul.children li {
   font-size: 100%;
+  margin-left: 15px;
 }
 
