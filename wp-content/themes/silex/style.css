@@ -50,7 +50,14 @@ table {
 }
 a img { border: none; }
 
-a {color: #2d96ed;}
+a {
+  color: #2d96ed;
+  text-decoration:none;
+}
+
+a:hover {
+  text-decoration:underline;
+}
 
 body {
 	background-color: #d5ebff;
@@ -275,7 +282,7 @@ body {
 	padding-left:17px;
 	padding-right:17px;
 	margin: 13px 10px;
-	background-color: #76cc37;
+	background-color: #76dd37;
 	padding:5px 17px 16px;
 }
 
@@ -375,5 +382,78 @@ body {
 	-webkit-border-radius: 8px;
 	-moz-border-radius: 8px;
 	border-radius: 8px;
+}
+
+.post {
+  padding-bottom: 10px;
+  margin-right: 20px;
+  margin-bottom: 15px;
+
+  }
+.posttitle {
+  margin-right: 20px;
+  margin-left: 0px;
+  padding: 15px 0px 0px 0px;
+}
+.post .entry p {
+  margin-bottom: 10px;
+  margin-top: 50px;
+}
+
+.post hr {
+  display: block;
+  }
+  
+  
+ol.commentlist * {
+  border-top: none !important;
+  border-bottom: none !important;
+  text-decoration: none !important;
+}
+
+ol.commentlist {list-style:none; margin:0 0 15px 0px; padding:0; text-indent:0;}
+ol.commentlist li {list-style: none;font-weight: 500;border: none;margin-bottom: 10px;margin-top: 10px;margin-left: 15px;padding: 10px;padding-right: 0px;}
+
+ol.commentlist li li {border-left: 1px dashed #ccc;}
+ol.commentlist li.alt {background: #fff;}
+
+.commentmetadata {
+  font-size: .8em;
+}
+
+.comment-author .vcard {
+  margin-bottom: 10px;
+  width: 100%;
+  height: 75px;
+  background: #fff;
+}
+
+
+ol.commentlist li div.vcard img.avatar { float:left;
+margin-right: 10px;}
+ol.commentlist li div.comment-author {
+
+}
+
+ol.commentlist li div.reply {font-size: .9em;margin-top: 5px;}
+ol.commentlist li div.reply a {width: auto;background: url(images/tab-background.gif) repeat-x bottom;padding: 0px 5px;text-decoration: none;border: 1px solid #ccc;border-top: 2px solid #ccc;}
+ol.commentlist li div.commentmetadata { text-align: right;clear: both;width: 100%;border-top: 1px dashed #ccc;
+padding: 10px 0px;
+}
+
+cite.fn {
+  font-size: .8em;
+}
+.says {
+  display: none;
+}
+
+ol.commentlist li.comment {
+  font-size: .9em;
+  font-weight: 500;
+  font-family: Helvetica,Arial,sans-serif;
+}
+ol.commentlist li.comment ul.children li {
+  font-size: 100%;
 }
 
