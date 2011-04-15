@@ -31,7 +31,7 @@ h1, h2, h3, h4, h5, h6 {
 	clear: both;
 }
 ol, ul {
-	list-style: bullet;
+	list-style: none;
 }
 blockquote {
 	quotes: none;
@@ -113,7 +113,41 @@ body {
 	text-decoration:underline;
 }
 
+#splash-front {
+  background-color: #fff;
+  clear: both;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  position:relative;
+}
+
+#splash-front img {
+  margin: 12px;
+}
+
+#splash-front h1 {
+  color:white;
+  position:absolute;
+  top:12px;
+  right:12px;
+  width:344px;
+  height:100%;
+  padding:32px 0 0 32px;
+  background-image:url(image/sr_splash_overlay.png);
+  background-position:top right;
+  background-repeat:no-repeat;
+  font-size:1.6em;
+}
+
+#splash h1 span {
+  display:block;
+  margin:0 0 5px 0;
+}
+
 #splash {
+	width:400px;
+	float: right;
 	background-color: #fff;
 	clear: both;
 	-webkit-border-radius: 8px;
@@ -131,10 +165,10 @@ body {
 	position:absolute;
 	top:12px;
 	right:12px;
-	width:344px;
+	width:350px;
 	height:100%;
 	padding:32px 0 0 32px;
-	background-image:url(image/sr_splash_overlay.png);
+	background-image:url(image/sr_splash_underlay_sm.png);
 	background-position:top right;
 	background-repeat:no-repeat;
 	font-size:1.6em;
@@ -224,8 +258,9 @@ body {
 
 
 #sidebar {
+	margin-top: 12px;
 	float:right;
-	width: 390px;
+	width: 400px;
 	-webkit-border-radius: 8px;
 	-moz-border-radius: 8px;
 	border-radius: 8px;
@@ -240,7 +275,7 @@ body {
 	padding-left:17px;
 	padding-right:17px;
 	margin: 13px 10px;
-	background-color: #edb960;
+	background-color: #76cc37;
 	padding:5px 17px 16px;
 }
 

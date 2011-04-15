@@ -54,12 +54,7 @@
 					<a id="site-title" href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 						<?php 
 						$logo_url = get_bloginfo('template_directory') . '/image/';
-						if(strpos($_SERVER['SERVER_NAME'], 'consulting')) {
-							$logo_url .= 'sc_logo.png';
-						}
-						else {
-							$logo_url .= 'sr_logo.png';
-						}
+						$logo_url .= 'sc_logo.png';
 						?>
 						<img src="<?php echo $logo_url; ?>" alt="<?php bloginfo( 'name' ); ?>" />
 					</a>
@@ -71,13 +66,13 @@
 					 If none is assigned, the menu with the lowest ID is used.  */ ?>
 					<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'primary' ) ); ?>
 				</div>
-	
-
 			</div><!-- #masthead -->
 		</div><!-- #header -->
-		<div id="splash">
+		<?php if(is_front_page()): ?>
+		<div id="splash-front">
 			<img src="<?php bloginfo('template_directory'); ?>/image/sr_splash_underlay.png" alt="" />
 			<?php echo sr_template_tagline(); ?>
 		</div><!--  #splash  -->
+		<?php endif; ?>
 	<div id="main">
 		
