@@ -1,0 +1,84 @@
+How would you describe the Views module for Drupal?  At its most basic, Views is simply a way to query a data set and display the results of that query.  I like to think of it as this: Views turns data into information.  The problem is, there are an infinite number of ways to display that information and Views only provides you with a few: as a table, a list or a grid.  These are known as styles in the Views UI.  Luckily, Views provides ways to extend these styles or create a completely new one.  This is where plugins come into play.
+
+This article assumes a certain familiarity with developing modules that are dependent on Views.  If you do not have much experience with Views, I recommend watching the <a title="Views for hackers" href="http://chicago2011.drupal.org/sessions/views-hackers">Views for hackers</a> presentation by Karim Ratib at Drupalcon Chicago.
+
+I'm going to step through the process of creating a Views 3 sub-module with a display plugin.  Although Views 3 is still in an alpha state in Drupal 6, all Drupal 7 Views development is with Views 3 rather than Views 2.  If you are developing for Drupal 6, it makes sense to develop a Views sub-module within the Views 3 architecture since it is much more extensible, thus easier to port to Drupal 7.
+
+Ok, let's dive in.  We're going to create a plugin that extends the table style.  The first thing we should cover is the overall layout of your module.  You will need the usual .module, .info and .install files.  You will also need a .views.inc file, which is where all of your views hooks will live.  This will automatically be picked up by Views, so you do not need to provide an include to it in your .module file.  Also, create the following folders: plugins and theme.
+
+The first thing we need to do is create our <code>hook_views_plugins()</code> in the .views.inc file.  This is where we register our new plugin and tell Views where our plugin lives.  It is also where we can register our theme for the new plugin.
+
+[php]
+function your_module_views_plugins() {
+  $theme_path = drupal_get_path('module', 'your_module') . '/theme';
+  return array(
+    'module' => 'your_module',
+    'style' => array(
+      'new_table' => array(
+        'path' => drupal_get_path('module', 'your_module') . '/plugins',
+        'parent' => 'table',
+        'title' => t('New Table'),
+        'theme' => 'your_module_new_table_view',
+        'theme path' => $theme_path,
+        'help' => t('Adds a message after the table.'),
+        'handler' => 'views_plugin_style_new_table',
+        'uses row plugin' => TRUE,
+        'uses fields' => TRUE,
+        'uses options' => TRUE,
+        'type' => 'normal',
+      ),
+    ),
+  );
+}
+[/php]
+
+In the above code example, the 'handler' points us to our next file, the actual plugin.  Within the plugins folder, we can now create a file with the value of the 'handler', views_plugin_style_new_table.inc.  Since Views is designed with an object-oriented architecture, we will create a class for our new plugin in this file.
+
+[php]
+class views_plugin_style_new_table extends views_plugin_style_table {
+[/php]
+
+Our plugin is extending from <code>views_plugin_style_table</code> which extends from <code>views_plugin_style</code> which extends from <code>views_plugin</code>.  We get all of the functionality from the table display plugin for free and all we need to do is tweak it to our liking.  For example, we get all of the style options defined by table, so if we wanted to add some additional options, we could override the <code>option_definition()</code> and <code>options_form()</code> methods.  This is a contrived example, but let's say we just wanted to add another option field to display a message to the user after the contents of the table.
+
+[php]
+function option_definition() {
+  $options = parent::option_definition();
+  $options['message_after_table'] = array('default'  => '');
+  return $options;
+}
+
+function options_form(&$form, &$form_state) {
+  parent::options_form($form, $form_state);
+  $form['message_after_table'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Message after table'),
+    '#default_value' => $this->options['message_after_table'],
+  );
+}
+[/php]
+
+Notice that the first thing we need to do in each method is call the parent method, otherwise we'd completely override the options defined by the table style.  There are a number of other methods that can be overridden the same way in your plugin.  I recommend going in and exploring the plugins defined in Views to get an idea of what they can do and how they are used.
+
+Now that we have defined our new plugin and given it some very basic functionality, we should check to make sure it displays under the view styles in the UI.  Click on the link next to Style and you should see your new plugin listed.  It uses the title defined in <code>your_module_views_plugins()</code>.  After selecting your plugin, you will then be taken to the style options.  Make sure that the form fields defined in your plugin are displayed there.
+
+Next, we move on to the plugin theme.  If we look back at <code>your_module_views_plugins()</code>, there is a new theme defined there.  This theme needs to be registered properly in the .module file with <code>hook_theme()</code>.
+
+[php]
+function your_module_theme() {
+  return array(
+    'your_module_new_table_view' => array(
+      'arguments' => array('form' => NULL),
+    ),
+  );
+}
+[/php]
+
+We have set our 'theme_path' in <code>your_module_views_plugins()</code> to point to the theme folder in our module, so we can create a file there called views_plugin_style_new_table.tpl.php.  In order to preserve the theming of the parent table plugin, we can just copy the code in from views-view-table.tpl.php.  The value from the new option added in views_plugin_style_new_table.inc will automatically be brought into our new template with the other option values, so to display it we add:
+
+[php]
+<?php print $options['message_after_table']; ?>
+[/php]
+
+If you are doing anything sufficiently complicated with your plugin, chances are you will need to preprocess your data before sending it to the theme.  In this case, our preprocess function would be named <code>template_preprocess_your_module_new_table_view(&$vars)</code>.  The view object will get passed in through <code>&$vars</code>, so any values that you need out of the view will be available to you to prepare data for your template.
+
+This article doesn't demonstrate the true power of plugins for the Views module, but I hope it gives you an idea of how to get started.  If you'd like to see some powerful plugins in action, two of the most heavily used sub-modules are <a title="Views bulk operations" href="http://drupal.org/project/views_bulk_operations">Views bulk operations</a> and  <a title="Views slideshow" href="http://drupal.org/project/views_ slideshow">Views slideshow</a> (which are so popular that they have THEIR own sub-modules).  I even have one of my own in review on drupal.org called <a title="Views taxonomy grid" href="http://drupal.org/sandbox/bazzic/1086442">Views taxonomy grid</a>.  As evidenced by the hundreds of sub-modules already hanging off of Views, you can do some pretty cool stuff.  
