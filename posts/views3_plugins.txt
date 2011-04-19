@@ -40,7 +40,7 @@ In the above code example, the 'handler' points us to our next file, the actual 
 class views_plugin_style_new_table extends views_plugin_style_table {
 [/php]
 
-Our plugin is extending from <code>views_plugin_style_table</code> which extends from <code>views_plugin_style</code> which extends from <code>views_plugin</code>.  We get all of the functionality from the table display plugin for free and all we need to do is tweak it to our liking.  For example, we get all of the style options defined by table, so if we wanted to add some additional options, we could override the <code>option_definition()</code> and <code>options_form()</code> methods.  For the purposes of this tutorial, let's say that we want to create an option to allow for natural sorting of our table.  So if we have content with titles that begin with numbers, we expect them to be sorted like numbers and not like strings.  For example, if we have titles that begin with 1, 2 and 10, we expect them to be sorted that way and not 1, 10 and 2.  
+Our plugin is extending from <code>views_plugin_style_table</code> which extends from <code>views_plugin_style</code> which extends from <code>views_plugin</code>.  We get all of the functionality from the table display plugin for free and all we need to do is tweak it to our liking.  For example, we get all of the style options defined by table, so if we wanted to add some additional options, we could override the <code>option_definition()</code> and <code>options_form()</code> methods.  For the purposes of this tutorial, let's say that we want to create an option to allow for natural sorting of our table.  So if we have content with titles that begin with integers, we expect them to be sorted like integers and not like strings.  For example, if we have titles that begin with 1, 2 and 10, we expect them to be sorted that way and not 1, 10 and 2.  
 
 [php]
 function option_definition() {
@@ -59,7 +59,22 @@ function options_form(&$form, &$form_state) {
 }
 [/php]
 
-Notice that the first thing we need to do in each method is call the parent method, otherwise we'd completely override the options defined by the table style.  There are a number of other methods that can be overridden the same way in your plugin.  I recommend going in and exploring the plugins defined in Views to get an idea of what they can do and how they are used.
+Notice that the first thing we need to do in each method is call the parent method, otherwise we'd completely override the options defined by the table style.  Now, we need to add the functionality that this checkbox enables.  We can manipulate the query by overriding the <code>query()</code> method in the plugin.  In our case, we're going to change the ORDER BY portion of the query so that we first sort the field as if it's an integer, then sort the field as if it's a string.
+
+[php]
+function query() {
+  parent::query();
+  $field = $_GET['order'];
+  $sort = $_GET['sort'];
+  if ($this->view->display_handler->display->display_options['style_options']['nat_sort'] && $field && $sort) {
+    $base_table = $this->view->query->base_table;
+    $this->view->query->orderby[0] = $base_table . '_' . $field . '+0 ' . $sort;
+    $this->view->query->orderby[1] = $base_table . '_' . $field . ' ' . $sort;
+  }
+}
+[/php]
+
+There are a number of other methods that can be overridden the same way in your plugin.  I recommend going in and exploring the plugins defined in Views to get an idea of what they can do and how they are used.
 
 Now that we have defined our new plugin and given it some very basic functionality, we should check to make sure it displays under the view styles in the UI.  
 
@@ -73,7 +88,7 @@ After selecting your plugin, you will then be taken to the style options.  Make 
 
 <img src="/posts/style_options.png" alt="your module's new style options" />
 
-Next, we move on to the plugin theme.  We won't need to do any real theming for this plugin since we are only changing the sorting of the table.  However, since this is a new plugin, we still need to create a template and preprocess function for the display.  If we look back at <code>your_module_views_plugins()</code>, there is a new theme defined there.  This theme needs to be registered properly in the .module file with <code>hook_theme()</code>.
+Next, we move on to the plugin theme.  We won't need to do any real theming for this plugin as we only changed the sorting of the table.  Since this is a new plugin, however, we still need to create a template and preprocess function for the display.  If we look back at <code>your_module_views_plugins()</code>, there is a new theme defined there.  This theme needs to be registered properly in the .module file with <code>hook_theme()</code>.
 
 [php]
 function your_module_theme() {
@@ -89,4 +104,6 @@ We have set our 'theme_path' in <code>your_module_views_plugins()</code> to poin
 
 If you are doing anything sufficiently complicated with your plugin, chances are you will need to do some additional work in your preprocess function before sending data to the theme.  The view object will get passed in through <code>&$vars</code>, so any values that you need out of the view will be available to you to prepare data for your template.
 
-This article doesn't demonstrate the true power of plugins for the Views module, but I hope it gives you an idea of how to get started.  If you'd like to see some powerful plugins in action, two of the most heavily used sub-modules are <a title="Views bulk operations" href="http://drupal.org/project/views_bulk_operations">Views bulk operations</a> and <a title="Views slideshow" href="http://drupal.org/project/views_ slideshow">Views slideshow</a> (which are so popular that they have THEIR own sub-modules).  I even have one of my own in review on drupal.org called <a title="Views taxonomy grid" href="http://drupal.org/sandbox/bazzic/1086442">Views taxonomy grid</a>.  As evidenced by the hundreds of sub-modules already hanging off of Views, you can do some pretty cool stuff.  
+This article doesn't demonstrate the true power of plugins for the Views module, but I hope it gives you an idea of how to get started.  If you'd like to see some powerful plugins in action, two of the most heavily used sub-modules are <a title="Views bulk operations" href="http://drupal.org/project/views_bulk_operations">Views bulk operations</a> and <a title="Views slideshow" href="http://drupal.org/project/views_ slideshow">Views slideshow</a> (which are so popular that they have THEIR own sub-modules).  I have one of my own in review on drupal.org called <a title="Views taxonomy grid" href="http://drupal.org/sandbox/bazzic/1086442">Views taxonomy grid</a>, the development of which provided me with much of the material for this article.  
+
+If you've ever caught yourself saying, "Why doesn't Views do X?", then get coding and contribute to the already rich ecosystem of modules available for Views.
