@@ -1,0 +1,21 @@
+<h3>Leadership Team</h3>
+Nathan Garbacz
+<em>Development Lead</em>
+
+With over ten years in the development industry, Nathan brings a wealth of experience in the media and education sectors.  He is a talented developer and an excellent mentor.  His focus on quality and delivery ensures that Silex delivers excellence on time and on budget.
+
+Nathan is a scrum master and is responsible for implementing our <a title="Agile process" href="/agile">Agile process</a>.
+
+Tom Gladhill
+<em>Product Lead</em>
+
+The user's experience is central to Tom's role in Silex Consulting.  Tom has worked in the internet industry for over ten years and is an expert developer in JavaScript and PHP.  Although, his most valuable skills are in designing compelling, usable web sites that fulfil the clients' objectives and delight their users.
+
+As our in-house product owner, Tom will work with you to <a title="gather your requirements" href="/services/requirements">gather your requirements</a> and communicate those to the development team.
+
+Noel Sharpe
+<em>Project Lead</em>
+
+Noel has worked in professional software development for over sixteen years, and is an experienced software engineer in a variety of <a title="platforms and languages" href="/services/bespoke_development">platforms and languages</a>.  He has successfully started and run several businesses and brings drive and enthusiasm to everything Silex Consulting does.  
+
+As a Qualified PRINCE2 practitioner and an experienced Agile lead, Noel's role in Silex is managing the delivery of your projects.

@@ -1,0 +1,7 @@
+<ul>
+<li><a href="http://www.capita.co.uk">The Capita Group</a></li>Silex supplies staff and expertise in a range of specialisms from business analysis and project management to project resourcing and PHP development.
+<li><a href="http://www.nbcuni.com">NBC Universal</a></li>Silex Consulting has been working with NBC Universal, acting as technology partners and managing the in-house multi-disciplined development team in an ambitious program of delivery.
+<li><a href="http://www.wolseley.com">Wolseley</a></li>Silex Consulting designed and developed a cost-effective digital asset management system for Wolseley PLC.
+</ul>
+
+

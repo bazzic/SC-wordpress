@@ -1,0 +1,20 @@
+<a href="http://www.silex-consulting.com/services/project_management">project_management</a>
+
+The difference between a project's success or failure can often come down to the way you manage your resources.  There is no substitute for leadership and experience when it comes to delivering complex solutions on time, on budget and on spec.  Silex Consulting understands this and has many successful projects and satisfied customers that will attest to our project management capabilities
+
+At Silex we do things differently.  For a start, all of our project managers bring a significant amount of technical IT experience to a project that will translate into important technical contributions and oversight to guide the project towards success. Additionally, we don't like process for it's own sake, but believe in an appropriate level for a project. Whether your project requires the controls available in a <a href="http://www.silex-consulting.com/services/project_management#PRINCE2">PRINCE2</a> project or if your project will only need a very light touch project management, with a sprinkling of <a href="http://www.silex-consulting.com/services/project_management#agile">agile methodologies</a>,  then Silex have the experienced consultants to implement this for you.
+
+Silex specialises in technical software implementation project management for the web, such as the design, build and delivery of a corporate web site or implementation of an intranet application.  We don't build roads, or manage application roll-out's, and this focus on a core industry has allowed us to develop insights that translate into savings for our customers.
+
+<a href="http://www.silex-consulting.com/services/requirements">Requirements Analysis</a>
+Without clear and focussed requirements gathering, you are unlikely to achieve your business objectives.  You may develop a solution that is on time and on budget, but that nobody needs which will have resulted in wasted resources and lost opportunities.  Our experienced experts will skillfully lead you through the requirements gathering phase of a project and produce specifications which will guide the development team to arrive at solutions that fulfil your business need.  Whether you are building a corporate website or embarking on a project to develop tools to streamline your business processes, Silex has the right team and approach to meet your needs.
+
+<a href="http://www.silex-consulting.com/services/bespoke_development">Bespoke Development</a>
+An integral part of our principals is that as a solution provider, Silex Consulting is your partner in delivering your web project.  Our in house <a href="http://www.silex-consulting.com/about/team">development team</a> will ensure that we deliver exceptional return on your investment, on time.
+Leveraging best of breed Open Source solutions such as <a href="http://www.drupal.org">Drupal</a>, <a href="http://wordpress.org/">WordPress</a>, <a href="http://www.alfresco.com/">Alfresco</a> and related technologies, Silex can rapidly build the systems your business needs to deliver Web Content Delivery, Enterprise Content Management and Document Management solutions.
+Silex have a broad range of in-house skills covering the full stack of Web technologies, including front end technologies such as HTML, Javascript, back end platforms like PHP, Grails and Python and infrastructure such as Linux, Apache MySQL, Oracle, Apache SOLR and Tomcat.
+
+<a href="http://www.silex-consulting.com/services/support">Application Support</a>
+Even if we didn't make it, well make sure it carries on working for you.
+
+<a href="http://www.silex-consulting.com/services/consulting">Consulting</a>

@@ -1,0 +1,57 @@
+<h3>Software development process and practice</h3>
+<ul>
+	<li>Requirements Engineering</li>
+	<li>Software Architecutre and Design</li>
+	<li>Software Deveopment Process Strategy and Implementation</li>
+	<li>Software Configuration Management</li>
+	<li>Technical Project Management
+<ul>
+	<li>PRINCE2</li>
+	<li>Scrum</li>
+	<li>DSDM</li>
+</ul>
+</li>
+</ul>
+<h3>Bespoke development practice</h3>
+<ul>
+	<li>Agile development process</li>
+	<li>Turnkey service</li>
+	<li>Open Source Business Systems</li>
+	<li>Information and Knowledge Management</li>
+	<li>Document and content management systems</li>
+	<li>Digital Asset Management</li>
+	<li>Ontology design and management</li>
+</ul>
+<h3>Tools and technologies</h3>
+<h4>Languages</h4>
+<ul>
+	<li>PHP</li>
+	<li>Java</li>
+	<li>Groovy</li>
+	<li>Python</li>
+	<li>Javascript</li>
+	<li>HTML</li>
+	<li>CSS</li>
+</ul>
+<h4>Frameworks</h4>
+<ul>
+	<li>Grails</li>
+	<li>Symfony</li>
+	<li>Zend</li>
+	<li>Spring</li>
+	<li>Hibernate</li>
+	<li>Django</li>
+	<li>Zope</li>
+	<li>JQuery</li>
+</ul>
+<h4>Content Mangement</h4>
+Drupal, Wordpress, Plone, Grails, Alfresco
+Digital Asset Management and Document Management
+Alfresco
+<h4>Markets we operate in</h4>
+<ul>
+	<li>Education</li>
+	<li>Government</li>
+	<li>SME</li>
+	<li>media</li>
+</ul>
