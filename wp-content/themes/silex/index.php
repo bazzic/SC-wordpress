@@ -4,8 +4,8 @@
 		<div id="container">
 		  <?php if(!is_front_page()): ?>
 		  <div id="splash">
-        <?php echo sr_template_tagline(); ?>
-        <img src="<?php bloginfo('template_directory'); ?>/image/sr_splash_underlay.png" width="376" alt="" />
+        <h1><span>Open thinking</span></h1>
+        <img src="<?php bloginfo('template_directory'); ?>/image/sr_splash_underlay.png" width="276" alt="" />
       </div><!--  #splash  -->
       <?php endif; ?>
 			<div id="content" role="main">
