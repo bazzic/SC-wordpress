@@ -1,0 +1,35 @@
+In a previous article, Views 3 Plugins, I went through the process of creating a plugin with a dependency on Views 3.  In the article, I recommended that any Views plugin development in Drupal 6 be done within the Views 3 architecture, even though it is in an alpha state.  An issue that I came across when doing my own development is, how can you ensure that the user of your plugin has Views 3 and not Views 2 installed on their system?  I will demonstrate how to prevent the installation of your module if the Views 3 dependency is not met.  Note that this is not a problem in Drupal 7, because you can have dependencies on minor versions in your .info file.
+
+There are just two hooks that you need to use in your .install file to achieve a Views 3 dependency in Drupal 6: <code>hook_requirements()</code> and <code>hook_uninstall()</code>.  First, let's take a look at <code>hook_requirements()</code>
+
+[php]
+function your_module_requirements($phase) {
+  if ($phase == 'install') {
+    if (module_exists('views')) {
+      $views_info = drupal_parse_info_file(drupal_get_path('module', 'views') . '/views.info');
+      $severity = (strpos($views_info['version'], '6.x-3') === 0) ? REQUIREMENT_OK : REQUIREMENT_ERROR;
+    }
+
+    return array(
+      'your_module' => array(
+        'title' =>  t('Views'),
+        'value' =>  $views_info['version'],
+        'description' =>  t('your_module requires Views 3.  Add the line version = 6.x-3.x into views.info if you have checked out 6.x-3.x from git.'),
+        'severity' => $severity,
+      )
+    );
+  }
+}
+[/php]
+
+Notice that this depends on the fact that if you have installed Views 3, there will be a version = 6.x-3.x in views.info.  However, you need to remind the user that this version attribute will not be there and needs to be added to views.info if the user has checked out their Views module from the 6.x-3.x branch in git.  The array that gets returned contains all of the information that will be displayed to the user if the installation fails. 
+
+The last thing you need to do is add <code>hook_uninstall()</code>, which covers us in the rare case that a user disables your module and then re-enables it with Views 2 installed.  In this case, <code>hook_requirements()</code> will not get called and your module will be installed.  Even if you have no schema defined in your .install file, you need to uninstall your module's schema so that <code>hook_requirements()</code> will get called every time a user installs your module.  
+
+[php]
+function your_module_uninstall() {
+  drupal_uninstall_schema('your_module');
+}
+[/php]
+
+I don't know of any other modules where minor version dependencies are an issue, but I hope this helps out any developer who needs to prevent installation of their module for some reason.
