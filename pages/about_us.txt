@@ -1,1 +1,23 @@
-The founders of Silex Consulting have been involved in web development since the late 1990's and have broad experience in all aspects of software development.  The company has focused on integrating Open Source Software into its customers business processes to deliver exceptional value.
+The founders of Silex Consulting have been involved in web development since the late 1990s and have broad experience in all aspects of software development.  The company has focused on integrating Open Source Software into its customers' business processes to deliver exceptional value.
+
+<h3 id="leadership">Leadership Team</h3>
+Nathan Garbacz
+<em>Development Lead</em>
+
+With over ten years in the development industry, Nathan brings a wealth of experience in the media and education sectors in the US and UK.  He is a talented developer and an excellent mentor.  His focus on quality and delivery ensures that Silex delivers excellence on time and on budget.
+
+Nathan is a scrum master and is responsible for managing the <a title="Bespoke development" href="/services/#development">development team</a> and implementing our <a title="Agile software development" href="http://en.wikipedia.org/wiki/Agile_software_development">Agile</a> process.
+
+Tom Gladhill
+<em>Product Lead</em>
+
+The user's experience is central to Tom's role in Silex Consulting.  Tom has worked in the internet industry for over ten years and is an expert developer in JavaScript and PHP.  Although, his most valuable skills are in designing compelling, usable web sites that fulfil the clients' objectives and delight their users.
+
+As our in-house product owner, Tom will work with you to <a title="gather your requirements" href="/services/#requirements">gather your requirements</a> and communicate those to the development team.
+
+Noel Sharpe
+<em>Project Lead</em>
+
+Noel has worked in professional software development for over sixteen years, and is an experienced software engineer in a variety of platforms and languages.  He has successfully started and run several businesses and brings drive and enthusiasm to everything Silex Consulting does.  
+
+As a qualified <a title="PRINCE2" href="http://en.wikipedia.org/wiki/PRINCE2">PRINCE2</a> practitioner and an experienced Agile lead, Noel's role in Silex is managing the delivery of your projects.

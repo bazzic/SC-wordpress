@@ -2,14 +2,17 @@ The difference between a project's success or failure can often come down to the
 
 At Silex we do things differently.  For a start, all of our project managers bring a significant amount of technical IT experience to a project that will translate into important technical contributions and oversight to guide the project towards success. Additionally, we don't apply a process for its own sake, but believe in an appropriate level for each project. Whether your project requires the controls available in a PRINCE2 project, or you prefer to follow agile methodologies, Silex has the experienced consultants that you need.
 
-Silex specialises in technical software implementation and project management for the web.  We can achieve the design, build and delivery of a corporate web site or the implementation of an intranet application.  We don't build roads or manage desktop application roll-outs, and our focus on web software has allowed us to develop insights that translate into savings for our customers.
+<!--Silex specialises in technical software implementation and project management for the web.  We can achieve the design, build and delivery of a corporate web site or the implementation of an intranet application.  We don't build roads or manage desktop application roll-outs, and our focus on web software has allowed us to develop insights that translate into savings for our customers.-->
 
-<h3>Requirements Analysis</h3>
+<h3>Consulting</h3>
+If you need to fine tune your development process or make the switch from <a title="Waterfall model" href="http://en.wikipedia.org/wiki/Waterfall_model">Waterfall</a> to <a title="Agile software development" href="http://en.wikipedia.org/wiki/Agile_software_development">Agile</a>, Silex can provide the right consulting expertise for your business.  Each member of our <a title="leadership team" href="/about#leadership">leadership team</a> has worked with agile, cross-functional teams and knows how to find a process that works for your in-house team.
+
+<h3 id="requirements">Requirements Analysis</h3>
 Without clear and focused requirements gathering, you are unlikely to achieve your business objectives.  You may develop a solution that is on time and on budget but which your business doesn't need.  This results in wasted resources and lost opportunities.  Our team will lead you through the requirements gathering phase of a project to produce specifications which will guide development and arrive at solutions that fulfil your business needs.  Whether you are building a corporate website or creating tools to help streamline your business processes, Silex has the right team and approach to meet your goals.
 
-<h3>Bespoke Development</h3>
+<h3 id="development">Bespoke Development</h3>
 We believe that as a solutions provider, Silex Consulting is your partner in delivering your web project.  Our in-house development team will ensure on-time delivery and exceptional return on your investment.
-Leveraging best of breed open source solutions such as <a href="http://www.drupal.org">Drupal</a>, <a href="http://wordpress.org">WordPress</a> and <a href="http://www.alfresco.com">Alfresco</a>, Silex can rapidly build the systems your business needs for Web Content Delivery, Enterprise Content Management and Document Management solutions.
+Leveraging best of breed open source solutions such as <a title="Drupal" href="http://www.drupal.org">Drupal</a>, <a title="WordPress" href="http://wordpress.org">WordPress</a> and <a title="Alfresco" href="http://www.alfresco.com">Alfresco</a>, Silex can rapidly build the systems your business needs for Web Content Delivery, Enterprise Content Management and Document Management solutions.
 
 We have a broad range of in-house skills covering the full stack of web technologies.  We develop in front-end technologies such as HTML, CSS and Javascript as well as back-end languages like PHP and Python and platforms like Grails, Django and Rails. We can also support server infrastructure and administration with Linux, Apache, MySQL, Oracle, Apache SOLR and Tomcat.
 
@@ -134,7 +137,3 @@ Even if we didn't make it, we'll make sure it carries on working for you.  We ha
 	</tr>
 </tbody>
 </table>
-
-
-<h3>Consulting</h3>
-If you need to fine tune your development process or make the switch from Waterfall to Agile, Silex can provide the right consulting expertise for your business.  Each member of our <a title="leadership team" href="/about/who">leadership team</a> has worked on agile, cross-functional teams and knows how to find a process that works for your in-house team.  
