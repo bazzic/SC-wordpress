@@ -1,7 +1,13 @@
-<ul>
-<li><a href="http://www.capita.co.uk">The Capita Group</a></li>Silex supplies staff and expertise in a range of specialisms from business analysis and project management to project resourcing and PHP development.
-<li><a href="http://www.nbcuni.com">NBC Universal</a></li>Silex Consulting has been working with NBC Universal, acting as technology partners and managing the in-house multi-disciplined development team in an ambitious program of delivery.
-<li><a href="http://www.wolseley.com">Wolseley</a></li>Silex Consulting designed and developed a cost-effective digital asset management system for Wolseley PLC.
-</ul>
+<h3><a title="The Capita Group" href="http://www.capita.co.uk">The Capita Group</a></h3>
 
+Our consultants worked on the <a title="National Strategies" href="http://nationalstrategies.standards.dcsf.gov.uk">National Strategies</a> web portal for the UK Department for Education - a Drupal project.  Silex supplied staff and expertise in a variety of roles, from business analysis and project management to project resourcing and PHP development.
 
+<h3><a title="NBC Universal" href="http://www.nbcuni.com">NBC Universal</a></h3>
+
+For the last year, Silex Consulting has been working with NBC Universal, acting as technology partners and managing the in-house multi-disciplined development team in an ambitious program of delivery.  This innovation-led project is changing the face of the digital division in areas such as web provisioning, continuous application deployment and on-demand programming.  
+
+The use of rapid development tools such as Drupal, combined with in-house and 3rd party API providers, is enabling NBC Universal to forge new connections with their subscribers, reach out into the fan community to create new relationships and develop their online presence in new markets globally.
+
+<h3><a title-="Wolseley" href="http://www.wolseley.com">Wolseley</a></h3>
+
+Silex Consulting designed and developed a cost-effective digital asset management system for Wolseley PLC.  The project used the Alfresco Enterprise Content Management System and the Grails web framework.
