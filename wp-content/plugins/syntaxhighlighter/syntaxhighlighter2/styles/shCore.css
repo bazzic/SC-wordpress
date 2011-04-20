@@ -29,7 +29,9 @@
  */
 .syntaxhighlighter,
 .syntaxhighlighter div,
+/** Comment out the code tag so that Silex can control the font-size
 .syntaxhighlighter code,
+*/
 .syntaxhighlighter table,
 .syntaxhighlighter table td,
 .syntaxhighlighter table tr,

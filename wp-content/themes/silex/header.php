@@ -2,14 +2,14 @@
 <html>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
-<title><?php
+<title>Silex Consulting | Drupal and Open Source CMS Services<?php
 //print_r(get_defined_vars()); die();
 	/*
 	 * Print the <title> tag based on what is being viewed.
 	 * We filter the output of wp_title() a bit -- see
 	 * twentyten_filter_wp_title() in functions.php.
 	 */
-	wp_title( '|', true, 'right' );
+	wp_title( '|', true, 'left' );
 
 	?></title>
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
