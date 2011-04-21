@@ -146,7 +146,7 @@ Even if we didn't build it, we'll make sure it carries on working for you.  We h
 	</tr>
 	<tr>
 		<td class="c27 c31"><p class="c20"><span class="c8">Additional Support</span></p></td>
-		<td class="c27" colspan="3"><p class="c20 c10"><span class="c8">£60/hour London hours support | £120/hour Out of hours support</span></p></td>
+		<td class="c27" colspan="3"><p class="c20 c10"><span class="c8">£60/hour London hours support | £120/hour out of hours support</span></p></td>
 	</tr>
 </tbody>
 </table>
