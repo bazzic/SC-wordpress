@@ -25,7 +25,11 @@
 			<?php endwhile; ?>
 			</div>
 			
-			<?php get_sidebar();?>
+			<?php if(!is_front_page()): ?>
+			  <?php get_sidebar();?>
+			<?php else: ?>
+			  <?php get_sidebar('home');?>
+			<?php endif; ?>
 			
 		</div>
 		
