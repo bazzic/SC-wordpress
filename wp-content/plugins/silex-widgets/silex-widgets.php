@@ -8,10 +8,10 @@ Version: 1.0.0
 
 function widget1_render() {
 ?>
-	<div id="splash">
-        <h1><span>Open thinking</span></h1>
-        <img src="<?php bloginfo('template_directory'); ?>/image/sr_splash_underlay.png" width="276" alt="" />
-  </div><!--  #splash  -->
+  <li id="splash" class='widget widget_splash'>
+    <h2><span>Open thinking</span></h2>
+    <img src="<?php bloginfo('template_directory'); ?>/image/sr_splash_underlay.png" width="276" alt="" />
+  </li>
 <?php
 }
 

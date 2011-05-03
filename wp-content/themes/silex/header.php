@@ -72,7 +72,7 @@
 		<div id="splash-front">
 			<img src="<?php bloginfo('template_directory'); ?>/image/sr_splash_underlay.png" alt="" />
 			<?php echo sr_template_tagline(); ?>
-		</div><!--  #splash  -->
+		</div>
 		<?php endif; ?>
 	<div id="main">
 		
