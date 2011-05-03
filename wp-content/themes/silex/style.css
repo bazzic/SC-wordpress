@@ -1,7 +1,7 @@
 /*
 Theme Name: Silex
 Theme URI: http://www.silexresources.com/
-Description: Average theme, awesome header!
+Description: Hacked together in a few hours!
 Author: Silex Coders
 
 */
@@ -65,13 +65,22 @@ body {
 }
 
 #wrapper {
-	width: 962px;
+	width: 938px;
 	margin: auto;
 }
 
 #header {
 	height: 111px;
 }
+
+/*
+#site-title {
+	float:left;
+	display:block;
+	position:relative;
+	left:-116px;
+}
+*/
 
 #site-title img {
 	padding-top: 19px;
@@ -82,7 +91,7 @@ body {
 	width:100%;
 	float:left;
 	position:relative;
-}	
+}
 
 .menu {
 	float: right;
@@ -129,14 +138,14 @@ body {
 }
 
 #splash-front img {
-  margin: 12px;
+  margin: 0px;
 }
 
 #splash-front h1 {
   color:white;
   position:absolute;
-  top:12px;
-  right:12px;
+  top:0px;
+  right:0px;
   width:344px;
   height:100%;
   padding:32px 0 0 32px;
