@@ -60,7 +60,7 @@ a:hover {
 }
 
 body {
-	background-color: #d5ebff;
+	background:#fff url('/wp-content/themes/silex/image/fabric_1.gif') repeat left top;
 	font-family: helvetica, arial, sans-serif;
 }
 
@@ -121,7 +121,6 @@ body {
 }
 
 #splash-front {
-  background-color: #fff;
   clear: both;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
