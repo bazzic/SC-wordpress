@@ -1,6 +1,10 @@
 <?php
 if ( function_exists('register_sidebar') ) {
     register_sidebar();
+    register_sidebar(array(
+      'name' => 'Home sidebar',
+      'id' => 'sidebar-home',
+    ));
 }
 
 function sr_template_tagline() {
