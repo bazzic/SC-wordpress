@@ -285,6 +285,10 @@ ul.sub-menu li.current_page_item a {
 	float:left;
 }
 
+.tagcloud {
+  padding:0 10px;
+}
+
 .widget {
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
