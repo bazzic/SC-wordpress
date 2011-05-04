@@ -139,11 +139,11 @@ body {
 }
 
 
-.menu ul ul {
+.menu ul ul, ul.menu li ul{
 	display:none;
 }
 
-.menu .current_page_item ul, ul.menu li ul.sub-menu {
+.menu .current_page_item ul, ul.menu li.current_page_item ul.sub-menu, ul.menu li.current_page_parent ul.sub-menu {
 	position:absolute;
 	top:100%;
 	margin-top:10px;
@@ -166,7 +166,7 @@ body {
 	padding:4px 22px;
 }
 
-li.current_page_item a {
+ul.sub-menu li.current_page_item a {
   color:#000;
 }
 
@@ -235,7 +235,7 @@ li.current_page_item a {
 	width:100%;
 }
 
-.page-parent #main, .page-child #main, .page #main {
+.page-parent #main, .page-child #main {
 	margin-top:50px;
 }
 
