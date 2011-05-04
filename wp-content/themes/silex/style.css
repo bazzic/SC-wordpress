@@ -47,6 +47,7 @@ del {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+	margin:1em 0;
 }
 a img { border: none; }
 
@@ -62,6 +63,7 @@ a:hover {
 body {
 	background:#fff url('/wp-content/themes/silex/image/fabric_1.gif') repeat left top;
 	font-family: helvetica, arial, sans-serif;
+	color:#242424;
 }
 
 #wrapper {
@@ -197,13 +199,6 @@ body {
 }
 
 #splash {
-	width:300px;
-	float: right;
-	background-color: #fff;
-	clear: both;
-	-webkit-border-radius: 8px;
-	-moz-border-radius: 8px;
-	border-radius: 8px;
 	position:relative;
 }
 
@@ -242,7 +237,7 @@ body {
 
 #content {
 	float: left;
-	width: 650px;
+	width: 622px;
 }
 
 #content h2 {
@@ -252,19 +247,19 @@ body {
 
 #content h3 {
 	margin:0 0 8px;
-	border-bottom:1px solid white;
-	padding-bottom:6px;
+	border-bottom:1px solid #ddd;
+	padding:6px 0;
 }
 
 #content p {
 	margin:1em 0;
-	line-height:1.25;
+	line-height:1.6;
 }
 
 #content h2,
 #content h3,
 #content h4 {
-	color: #318ad9;
+	color: #555;
 }
 
 #content h2 a,
@@ -280,83 +275,39 @@ body {
 	text-decoration:underline;
 }
 
-#jobs .job h3 {
-	border:0;
-	border-top:1px solid white;
-	padding:8px 0 0 0;
-}
-
-#jobs .job p {
-	margin:0.5em 0;
-	font-size:0.8em;	
-}
-
-#jobs .job p.jobs-applynow a {
-	color:black;
-	text-decoration:none;
-	font-weight:bold;
-}
-
-#jobs .job p.jobs-applynow a:hover {
-	text-decoration:underline;
-}
-
-#jobs .job ul li {
-	line-height:1.4;
-	font-size:0.9em;
-}
-
-#jobs .job ul li span {
-}
-
-
-
 
 #sidebar {
-	margin-top: 12px;
-	float:right;
-	width: 300px;
-	-webkit-border-radius: 8px;
-	-moz-border-radius: 8px;
-	border-radius: 8px;
-	background-color:white;
+	width:306px;
+	margin-left:10px;
+	float:left;
 }
 
-.sidebar_item,
-#sidebar .widget {
-	-webkit-border-radius: 8px;
-	-moz-border-radius: 8px;
-	border-radius: 8px;
-	padding-left:17px;
-	padding-right:17px;
-	margin: 13px 10px;
-	background-color: #76cc37;
-	padding:5px 17px 16px;
+.widget {
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	background-color: rgba(200,200,200,0.2);
 }
 
-
-
-.sidebar_item h2,
-#sidebar .widget h2 {
-	padding-top: 12px;
-	padding-bottom: 4px;
-	color: #fff;
-	margin:0 0 10px 0;
-	border-bottom: 2px solid white;
+.widget h2 {
+	color: #555;
+	padding:12px 10px 4px;
 }
 
-.sidebar_item h2 a,
-#sidebar .widget h2 a {
+.widget h2 a {
 	text-decoration:none;	
-	color: #fff;
+	color: #555;
 }
 
-#sidebar .widget ul li {
-	padding-top: 10px;
+.widget ul {
+	padding:0 10px;
+}
+
+.widget ul li {
 	line-height:1.4;
 }
 
-#sidebar .widget ul a {
+.widget ul a {
   color: #2d77dd;
 }
 
