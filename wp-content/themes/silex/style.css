@@ -168,6 +168,9 @@ body {
 	border-radius: 0px;
 	margin:0;
 	padding:4px 22px;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;		
 }
 
 ul.sub-menu li.current_page_item a {
@@ -181,10 +184,14 @@ ul.sub-menu li.current_page_item a {
   -moz-border-radius: 8px;
   border-radius: 8px;
   position:relative;
+	-moz-box-shadow: 1px 1px 2px #999;
+	-webkit-box-shadow: 1px 1px 2px #999;
+	box-shadow: 1px 1px 2px #999;
 }
 
 #splash-front img {
   margin: 0px;
+  display:block;
 }
 
 #splash-front h1 {
@@ -298,12 +305,11 @@ ul.sub-menu li.current_page_item a {
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
 	border-radius: 4px;
-	background-color: rgba(200,200,200,0.2);
+	#background-color: rgba(200,200,200,0.2);
 	
 	-moz-box-shadow: 1px 1px 2px #ccc;
 	-webkit-box-shadow: 1px 1px 2px #ccc;
 	box-shadow: 1px 1px 2px #ccc;
-	
 }
 
 .widget h2 {
@@ -323,17 +329,17 @@ ul.sub-menu li.current_page_item a {
 .widget ul li {
 	line-height:1.6;
 	font-size:12px;
-	border-bottom:1px dotted #ccc;
-	padding:4px 10px;
 }
 
-.widget ul li:hover {
+.widget ul li a:hover {
 	cursor:pointer;
 	background-color:rgba(200,200,200,0.5);
 }
 
 .widget ul li a {
-	padding:4px 0;
+	padding:4px 10px;
+	display:block;
+	border-bottom:1px dotted #ccc;
 }
 
 .widget ul a {
