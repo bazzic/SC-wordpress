@@ -100,11 +100,7 @@ body {
 	margin-top:59px;
 }
 
-.menu ul {
-	list-style-type: none;
-}
-
-.menu ul li {
+.menu li {
 	background-color: #fff;
 	float: left;
 	margin:0 0 10px 7px;
@@ -121,25 +117,25 @@ body {
 }
 */
 
-.menu ul a {
+.menu a {
 	text-decoration:none;
 	color:#318ad9;
 }
 
-.menu ul a:hover {
+.menu a:hover {
 	text-decoration:underline;
 }
 
-.menu ul a:hover ul li a {
+.menu a:hover ul li a {
 	text-decoration:none;
 }
 
-.menu ul ul a:hover {
+#primary-nav ul ul a:hover {
 	text-decoration:underline;
 }
 
 
-.menu ul ul {
+#primary-nav ul ul {
 	display:none;
 }
 
@@ -157,7 +153,7 @@ body {
 	border-width:1px 0;
 }
 
-.menu ul ul li {
+#primary-nav ul ul li {
 	background:none;
 	-webkit-border-radius: 0px;
 	-moz-border-radius: 0px;
