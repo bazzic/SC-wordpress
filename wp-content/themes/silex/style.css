@@ -157,7 +157,7 @@ body {
 	border-width:1px 0;
 }
 
-.menu ul ul li {
+.menu ul ul li, ul.sub-menu li {
 	background:none;
 	-webkit-border-radius: 0px;
 	-moz-border-radius: 0px;
