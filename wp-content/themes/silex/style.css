@@ -121,29 +121,28 @@ body {
 }
 */
 
-.menu ul a {
+.menu a {
 	text-decoration:none;
 	color:#318ad9;
 }
 
-.menu ul a:hover {
+.menu a:hover {
 	text-decoration:underline;
 }
 
-.menu ul a:hover ul li a {
+.menu a:hover ul li a {
 	text-decoration:none;
 }
 
-.menu ul ul a:hover {
+#primary-nav ul ul a:hover {
 	text-decoration:underline;
 }
 
-
-.menu ul ul, ul.menu li ul{
+#primary-nav ul ul, #primary-nav li ul {
 	display:none;
 }
 
-.menu .current_page_item ul, ul.menu li.current_page_item ul.sub-menu, ul.menu li.current_page_parent ul.sub-menu {
+#primary-nav .current_page_item ul, #primary-nav li.current_page_item ul.sub-menu, #primary-nav li.current_page_parent ul.sub-menu {
 	position:absolute;
 	top:100%;
 	margin-top:10px;
@@ -157,7 +156,7 @@ body {
 	border-width:1px 0;
 }
 
-.menu ul ul li, .menu ul.sub-menu li {
+#primary-nav ul ul li, #primary-nav ul.sub-menu li {
 	background:none;
 	-webkit-border-radius: 0px;
 	-moz-border-radius: 0px;
@@ -284,10 +283,6 @@ ul.sub-menu li.current_page_item a {
 	width:306px;
 	margin-left:10px;
 	float:left;
-}
-
-.tagcloud {
-  padding:0 10px;
 }
 
 .widget {
@@ -500,7 +495,7 @@ ol.commentlist li.comment ul.children li {
 .c22{width:468.0pt;background-color:#ffffff;padding:72.0pt 72.0pt 72.0pt 72.0pt}
 .c9{padding-left:0pt;margin-left:36.0pt}
 .c5{line-height:1.15;direction:ltr}
-.c29{width:622px;}
+.c29{width:650px;}
 .c12{font-weight:bold}
 .c24{text-align:right}
 .c10{height:11pt}
