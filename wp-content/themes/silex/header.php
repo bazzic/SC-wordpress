@@ -45,7 +45,7 @@
 					<a id="site-title" href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 						<?php 
 						$logo_url = get_bloginfo('template_directory') . '/image/';
-						$logo_url .= 'sc_logo.png';
+						$logo_url .= 'sc_logo-no-strap.png';
 						?>
 						<img src="<?php echo $logo_url; ?>" alt="<?php bloginfo( 'name' ); ?>" />
 					</a>
