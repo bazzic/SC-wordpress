@@ -1,0 +1,7 @@
+# settings
+wp-config.php
+
+# OS Generated
+
+.DS_Store
+Thumbs.db
