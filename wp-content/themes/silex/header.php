@@ -12,19 +12,10 @@
 	wp_title( '|', true, 'left' );
 
 	?></title>
+<link type="image/x-icon" href="<?php echo bloginfo('template_url'); ?>/image/favicon.ico" rel="icon">
+<link type="image/x-icon" href="<?php echo bloginfo('template_url'); ?>/image/favicon.ico" rel="shortcut icon">
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-<script src="<?php bloginfo('template_directory'); ?>/js/cufon-yui.js" type="text/javascript"></script>
-<script src="<?php bloginfo('template_directory'); ?>/js/FoundryFormSans.js" type="text/javascript"></script>
-<script src="<?php bloginfo('template_directory'); ?>/js/syfy-regular.font.js" type="text/javascript"></script>
-<script type="text/javascript">
-// Cufon.replace('.menu ul li a', { fontFamily: 'FoundryFormSans'	});
-// Cufon.replace('#content h2', { fontFamily: 'FoundryFormSans', color: '#318ad9' });
-// Cufon.replace('#content h3', { fontFamily: 'FoundryFormSans', color: '#318ad9' });
-// Cufon.replace('.news_item h3', { fontFamily: 'FoundryFormSans', color: '#ffffff' });
-// Cufon.replace('h1', { fontFamily: 'FoundryFormSans' });
-</script>
-
 <?php
 	if ( is_singular() && get_option( 'thread_comments' ) )
 		wp_enqueue_script( 'comment-reply' );
